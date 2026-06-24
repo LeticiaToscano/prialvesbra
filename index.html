@@ -1018,7 +1018,13 @@
 
     /* SITE CARDS (calculadora + comunidade) */
     .site-card { border-radius: 18px; margin-top: 24px !important; }
-    .site-card-thumb { aspect-ratio: 16/10; }
+    .site-card-thumb { aspect-ratio: 16/9; background: #050912; }
+    /* Mobile: mostrar imagem inteira (sem cortar laterais com texto) */
+    .site-card .site-card-img {
+      background-size: contain !important;
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+    }
     .site-card-browser-chrome { height: 24px; padding: 0 9px; gap: 4px; }
     .site-card-dot { width: 6px; height: 6px; }
     .site-card-dot.dot-g { margin-right: 4px; }
